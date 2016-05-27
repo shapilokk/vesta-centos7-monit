@@ -2,7 +2,7 @@
 Installation:
 
     cd /etc/monit.d/
-    git clone https://github.com/shapilokk/vesta-centos7-monit.git
+    git clone https://github.com/shapilokk/vesta-centos7-monit.git && rm -f README.md
     /bin/systemctl restart monit
 
 
