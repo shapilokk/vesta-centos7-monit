@@ -1,4 +1,16 @@
 # Monit configs for Vesta CP on Centos 7
+Services for monitoring:
+* crond
+* exim
+* httpd
+* memcached
+* mysql
+* nginx
+* sshd
+* vesta-nginx
+* vesta-php
+* vsftpd
+
 Installation:
 
     cd /etc/monit.d/
