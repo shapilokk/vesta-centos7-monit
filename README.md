@@ -2,11 +2,13 @@
 Services for monitoring:
 * clamd
 * crond
+* dovecot
 * exim
 * httpd
 * memcached
 * mysql
 * nginx
+* spamassassin
 * sshd
 * vesta-nginx
 * vesta-php
