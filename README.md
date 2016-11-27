@@ -1,5 +1,6 @@
 # Monit configs for Vesta CP on CentOS 7
 Services for monitoring:
+* clamd
 * crond
 * exim
 * httpd
@@ -11,10 +12,10 @@ Services for monitoring:
 * vesta-php
 * vsftpd
 
-Installation:
+Installation (assuming monit is already installed):
 
     cd /etc/monit.d/
-    git clone https://github.com/shapilokk/vesta-centos7-monit.git ./ && rm -f README.md
+    git clone https://github.com/infinitnet/vesta-centos7-monit.git ./ && rm -f README.md
     systemctl restart monit
 
 
