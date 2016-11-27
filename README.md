@@ -1,4 +1,4 @@
-# Monit configs for Vesta CP on Centos 7
+# Monit configs for Vesta CP on CentOS 7
 Services for monitoring:
 * crond
 * exim
@@ -15,12 +15,10 @@ Installation:
 
     cd /etc/monit.d/
     git clone https://github.com/shapilokk/vesta-centos7-monit.git ./ && rm -f README.md
-    /bin/systemctl restart monit
+    systemctl restart monit
 
 
 Check service status:
 
     monit status
 
-
-If memcached doesn't exist on your system, remove memcached.conf
