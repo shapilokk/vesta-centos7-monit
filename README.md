@@ -1,5 +1,5 @@
 # Monit configs for Vesta CP on CentOS 7
-Services for monitoring:
+## Services for monitoring:
 * clamd
 * crond
 * dovecot
@@ -14,14 +14,17 @@ Services for monitoring:
 * vesta-php
 * vsftpd
 
-Installation (assuming monit is already installed):
+## Other features
+* Monitors space and inodes on /
+* Monitors system resources (RAM, swap, CPU, load)
+
+## Installation (assuming monit is already installed):
 
     cd /etc/monit.d/
     git clone https://github.com/infinitnet/vesta-centos7-monit.git ./ && rm -f README.md
     systemctl restart monit
 
+## Check service status:
 
-Check service status:
-
-    monit status
+    monit <status|summary>
 
