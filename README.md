@@ -22,7 +22,11 @@
 
     cd /etc/monit.d/
     git clone https://github.com/infinitnet/vesta-centos7-monit.git ./ && rm -f README.md
+    myip=1.2.3.4
+    sed -i 's/host localhost/host '$myip'/g' /etc/monit.d/*.conf
     systemctl restart monit
+
+Replace 1.2.3.4 with your public IP.
 
 ## Check service status:
 
